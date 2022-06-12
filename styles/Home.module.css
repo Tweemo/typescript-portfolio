@@ -44,3 +44,11 @@
   border: solid 2px black;
   margin: 10px;
 }
+
+.projectIcon {
+  border-radius: 20%;
+}
+
+.projectContainer {
+  min-height: 65vh;
+}
