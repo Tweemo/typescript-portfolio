@@ -14,9 +14,11 @@ const Navbar = () => {
   return (
   <Box className={styles.cover}>
     <SimpleGrid columns={3} className={styles.nav}>
-      <Center>
-        <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>
-      </Center>   
+      <Link href='/'>
+        <Center>
+          <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>
+        </Center>   
+      </Link>
       <Link href='/projects'>
         <Center>
           <Text fontSize='xl'>Projects</Text>
