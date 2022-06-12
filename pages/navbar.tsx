@@ -2,11 +2,11 @@ import {
   Image,
   Box,
   SimpleGrid,
-  Heading,
   Text,
   Center,
 } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 
 const Navbar = () => {
@@ -17,12 +17,16 @@ const Navbar = () => {
       <Center>
         <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>
       </Center>   
-      <Center>
-        <Text fontSize='xl'>Projects</Text>
-      </Center>   
-      <Center>
-        <Text fontSize='xl'>Contact</Text>
-      </Center>   
+      <Link href='/projects'>
+        <Center>
+          <Text fontSize='xl'>Projects</Text>
+        </Center>   
+      </Link>
+      <Link href='/contact'>
+        <Center>
+          <Text fontSize='xl'>Contact</Text>
+        </Center>   
+      </Link>
     </SimpleGrid>
   </Box>
     )
