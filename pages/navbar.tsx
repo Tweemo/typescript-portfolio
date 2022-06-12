@@ -18,10 +18,10 @@ const Navbar = () => {
         <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>
       </Center>   
       <Center>
-        <Text fontSize='xl'> About</Text>
+        <Text fontSize='xl'>Projects</Text>
       </Center>   
       <Center>
-        <Text fontSize='xl'> Projects</Text>
+        <Text fontSize='xl'>Contact</Text>
       </Center>   
     </SimpleGrid>
   </Box>
