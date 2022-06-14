@@ -14,16 +14,16 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-      <Center>
-        <Heading>
-          Projects In Progress:
-        </Heading>
-      </Center>
-      {/* Each individual project would slot here
-      eventually probs get a postgres db here to map through all of them, for now hard code project.  */}
-      <Box className={styles.projectContainer}>
-        <OneProject/>
-      </Box>
+        <Center>
+          <Heading>
+            Projects In Progress:
+          </Heading>
+        </Center>
+        {/* Each individual project would slot here
+        eventually probs get a postgres db here to map through all of them, for now hard code project.  */}
+        <Box h='68vh' className={styles.projectContainer}>
+          <OneProject/>
+        </Box>
 {/* 
       <Center>
         <Heading>
