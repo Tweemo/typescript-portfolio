@@ -1,12 +1,6 @@
 import type { NextPage } from 'next'
 import React from 'react'
 import Head from 'next/head'
-import { 
-  Text,
-  UnorderedList,
-  ListItem,
-  Box,
- } from '@chakra-ui/react'
 import Navbar from './navbar'
 import Intro from './intro'
 import Socials from './socials'

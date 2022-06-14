@@ -25,3 +25,7 @@
 .projectIcon {
   border-radius: 20%;
 }
+
+.box {
+  overflow-y: scroll
+}
