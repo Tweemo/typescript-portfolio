@@ -7,11 +7,11 @@ const About = () => (
       About me
     </Text>
     <Text fontSize={['lg','4xl']}  h={['24vh','27.7vh']} align='center' margin={['20px', '0px']}>
-      i like to code things that either interest me or solve my problems. 
+      I like to code things that either interest me or solve problems. 
       <br />
-      i&apos;m interested in a lot of things and have a lot of first world problems.
+      I&apos;m interested in many things and have many solutions.
       <br />
-      pursuing random hobbies is my biggest hobby
+      Pursuing random hobbies is my biggest hobby.
     </Text>
   </>
 )
