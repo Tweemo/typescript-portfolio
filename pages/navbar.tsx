@@ -12,15 +12,15 @@ import styles from '../styles/Home.module.css'
 const Navbar = () => {
   
   return (
-  <Box className={styles.cover}>
-    <SimpleGrid columns={3} className={styles.nav}>
+  <Box>
+    <SimpleGrid columns={3} h='10vh'>
       <Center>
-        <Link className={styles.links} href='/'>
+        <Link href='/'>
           <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>
         </Link>
       </Center>   
       <Center>
-        <Link className={styles.links} href='/projects'>
+        <Link href='/projects'>
         <Text fontSize='xl'>
           Projects
           </Text>
