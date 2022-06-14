@@ -6,7 +6,6 @@ import {
   Box,
   SimpleGrid,
 } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
 import Socials from './socials'
 import Navbar from './navbar'
 
@@ -15,8 +14,8 @@ const Contact = () => {
 return (
     <>
       <Navbar />
-      <Box h={['68vh','64vh']}>
-        <Text color='gray' fontSize='2xl' marginLeft={['20px','100px']} marginTop={['20px','100px']}>
+      <Box h={['70vh','64vh']}>
+        <Text color='gray' fontSize='2xl' marginLeft={['20px','180px']} marginTop={['20px','100px']}>
           Get In Touch
         </Text>
         <Center>

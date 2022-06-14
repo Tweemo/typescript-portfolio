@@ -21,14 +21,12 @@ const Home: NextPage = () => (
     </Head>
     <Navbar />
     <Intro />
-
       <Text className={styles.info} fontSize='xl' align='center'>
         About me insert here. 
         I like to code things that interest me. I&apos;m interested in almost everything.
         <br></br>
         I like to code things that interest me. I&apos;m interested in almost everything.
       </Text>
-
     <Socials/>
   </>
 )
