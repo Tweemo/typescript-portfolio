@@ -10,18 +10,18 @@ import styles from '../styles/Home.module.css'
 const Intro = () => {
   
   return (
-    <Box h={['41vh','43.5vh']}>
+    <Box h={['41vh','40vh']}>
       <Center>
         <Image className={styles.pic} src='images/pic.jpg' alt='me' />
       </Center>
       <Center>
         <Center>
-          <Heading className={styles.header}>
+          <Heading fontSize={['2xl','4xl']} p='20px'>
             This is me, Tim. 
           </Heading>
         </Center>
-        <Text align='center' fontSize='3xl' className={styles.header}>
-          I&apos;m A Web Developer.
+        <Text align='center' fontSize={['xl','3xl']} className={styles.header}>
+          I&apos;m A <del>Pharmacist</del> Web Developer.
         </Text>
       </Center>
     </Box>
