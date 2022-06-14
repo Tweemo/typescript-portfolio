@@ -15,7 +15,7 @@ return (
     <>
       <Navbar />
       <Box h={['70vh','64vh']}>
-        <Text color='gray' fontSize='2xl' marginLeft={['20px','180px']} marginTop={['20px','100px']}>
+        <Text color='gray' fontSize={['2xl', '4xl']} marginLeft={['20px','180px']} marginTop={['20px','100px']}>
           Get In Touch
         </Text>
         <Center>
