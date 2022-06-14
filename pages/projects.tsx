@@ -1,13 +1,8 @@
 import {
-  Image,
   Heading,
-  Text,
-  HStack,
   Box,
-  VStack,
   Center,
-  Link,
-  LinkBox,
+  Text,
 } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 import Navbar from './navbar'
@@ -24,12 +19,22 @@ const Projects = () => {
           Projects In Progress:
         </Heading>
       </Center>
-
-        {/* Each individual project would slot here
-        eventually probs get a postgres db here to map through all of them, for now hard code project.  */}
-        <Box className={styles.projectContainer}>
-          <OneProject/>
-        </Box>
+      {/* Each individual project would slot here
+      eventually probs get a postgres db here to map through all of them, for now hard code project.  */}
+      <Box className={styles.projectContainer}>
+        <OneProject/>
+      </Box>
+{/* 
+      <Center>
+        <Heading>
+          Completed Projects:
+        </Heading>
+      </Center>
+      <Center>
+        <Text>
+          There is always something to improve on a project. 
+        </Text>
+      </Center> */}
       <Socials />
     </>
     )

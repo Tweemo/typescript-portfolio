@@ -4,9 +4,9 @@ import {
   SimpleGrid,
   Text,
   Center,
+  Link,
 } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link'
 
 
 const Navbar = () => {
@@ -14,21 +14,23 @@ const Navbar = () => {
   return (
   <Box className={styles.cover}>
     <SimpleGrid columns={3} className={styles.nav}>
-      <Link href='/'>
-        <Center>
+      <Center>
+        <Link className={styles.links} href='/'>
           <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>
-        </Center>   
-      </Link>
-      <Link href='/projects'>
-        <Center>
-          <Text fontSize='xl'>Projects</Text>
-        </Center>   
-      </Link>
-      <Link href='/contact'>
-        <Center>
+        </Link>
+      </Center>   
+      <Center>
+        <Link className={styles.links} href='/projects'>
+        <Text fontSize='xl'>
+          Projects
+          </Text>
+        </Link>
+      </Center>
+      <Center>
+        <Link href='/contact'>
           <Text fontSize='xl'>Contact</Text>
-        </Center>   
-      </Link>
+        </Link>
+      </Center>   
     </SimpleGrid>
   </Box>
     )
