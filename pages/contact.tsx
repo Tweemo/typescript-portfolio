@@ -1,10 +1,10 @@
 import {
-  Image,
+  Link,
   Heading,
   Text,
   Center,
   Box,
-  VStack,
+  SimpleGrid,
 } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 import Socials from './socials'
@@ -15,16 +15,26 @@ const Contact = () => {
 return (
     <>
       <Navbar />
-      <Center>
-        <VStack h='65vh'>
-          <Heading>
-            Get In Touch
+      <Box h={['68vh','64vh']}>
+        <Text color='gray' fontSize='2xl' marginLeft={['20px','100px']} marginTop={['20px','100px']}>
+          Get In Touch
+        </Text>
+        <Center>
+          <Heading margin={['60px', '100px']}>
+            Feel free to flick through an email or DM on LinkedIn. I&apos;ll gladly have a yarn.
           </Heading>
-          <Text>
-            Flick me an email @ Timothywrliew@gmail.com
+        </Center>
+      <Center>
+        <SimpleGrid columns={2} spacing='6vw' margin='20px'>
+          <Text fontSize='2xl'>
+          Email: Timothywrliew@gmail.com
           </Text>
-        </VStack>
+          <Text fontSize='2xl'>
+            LinkedIn: <Link href='https://www.linkedin.com/in/tim-liew-a9572b20b/' isExternal> Tim Liew</Link>
+          </Text>
+        </SimpleGrid>
       </Center>
+      </Box>
       <Socials />
     </>
   )
