@@ -6,14 +6,16 @@ import {
   VStack,
   Link,
   LinkBox,
+  Center,
 } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 
 const OneProject = () => {
   
   return (
-    <>
-      <LinkBox  as='article' margin='20px'>
+  <>
+    <Center>
+      <LinkBox w={['100vw','30vw']} as='article' margin='20px'>
         <VStack>
           <Link href='/'>
             <Heading fontSize='xl'>
@@ -23,7 +25,7 @@ const OneProject = () => {
           <HStack>
             <Image className={styles.projectIcon} boxSize='100px' src='https://tmctohealth.com/wp-content/uploads/2017/05/vegetables-vegetable-basket-harvest-garden-square.jpg' alt='Vege Basket'/>
             <Text>
-              <b>Purpose:</b> Final group project
+              <b>Purpose:</b> Platform to redistribute excess food.
               <br/>
               <b>Time to complete:</b> 1 week
               <br/>
@@ -42,8 +44,10 @@ const OneProject = () => {
         </VStack>
         <hr />
       </LinkBox>
+    </Center>
 
-      <LinkBox as='article' margin='20px'>
+    <Center>
+      <LinkBox w={['100vw','30vw']}  as='article' margin='20px'>
         <VStack>
           <Link href='https://tims-battleships.herokuapp.com/' isExternal>
             <Heading fontSize='xl'>
@@ -72,8 +76,10 @@ const OneProject = () => {
         </VStack>
         <hr />
       </LinkBox>
+    </Center>
 
-      <LinkBox  as='article' margin='20px'>
+    <Center>
+      <LinkBox  w={['100vw','30vw']}  as='article' margin='20px'>
         <VStack>
           <Link href='/'>
             <Heading fontSize='xl'>
@@ -102,8 +108,8 @@ const OneProject = () => {
         </VStack>
         <hr />
       </LinkBox>
-
-    </>
+    </Center>
+  </>
     )
   }
 
