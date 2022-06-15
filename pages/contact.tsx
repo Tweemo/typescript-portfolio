@@ -26,7 +26,7 @@ return (
       <Center>
         <SimpleGrid columns={2} spacing='6vw' margin='20px'>
           <Text fontSize='2xl'>
-          Email: Timothywrliew@gmail.com
+          Email: <a href = "mailto: timothywrliew@gmail.com">Timothywrliew@gmail.com</a>
           </Text>
           <Text fontSize='2xl'>
             LinkedIn: <Link href='https://www.linkedin.com/in/tim-liew-a9572b20b/' isExternal> Tim Liew</Link>

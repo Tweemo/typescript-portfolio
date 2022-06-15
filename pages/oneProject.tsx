@@ -13,6 +13,36 @@ const OneProject = () => {
   
   return (
     <>
+      <LinkBox  as='article' margin='20px'>
+        <VStack>
+          <Link href='/'>
+            <Heading fontSize='xl'>
+              Pātaka
+            </Heading>
+          </Link>
+          <HStack>
+            <Image className={styles.projectIcon} boxSize='100px' src='https://tmctohealth.com/wp-content/uploads/2017/05/vegetables-vegetable-basket-harvest-garden-square.jpg' alt='Vege Basket'/>
+            <Text>
+              <b>Purpose:</b> Final group project
+              <br/>
+              <b>Time to complete:</b> 1 week
+              <br/>
+              <b>Tweaks required:</b> Mobile friendly, Listing status, Region filters, and comment manipulation.
+              <br/>
+              <b>Tech Stack:</b> React, Sqlite3, knex, express. 
+              <br/>
+              <Link href='https://github.com/Tweemo/Paataka' isExternal>
+                <b>Click for Repo</b>
+              </Link>
+            </Text>
+          </HStack>
+          <Text as='i'>
+            Date added: May 11 2022
+          </Text>
+        </VStack>
+        <hr />
+      </LinkBox>
+
       <LinkBox as='article' margin='20px'>
         <VStack>
           <Link href='https://tims-battleships.herokuapp.com/' isExternal>
@@ -72,6 +102,7 @@ const OneProject = () => {
         </VStack>
         <hr />
       </LinkBox>
+
     </>
     )
   }
