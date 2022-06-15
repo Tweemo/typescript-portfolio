@@ -29,7 +29,7 @@ const OneProject = () => {
               <br/>
               <b>Tweaks required:</b> Mobile friendly, Listing status, Region filters, and comment manipulation.
               <br/>
-              <b>Tech Stack:</b> React, Sqlite3, knex, express. 
+              <b>Tech Stack:</b> React, Sqlite3, Knex, Express. 
               <br/>
               <Link href='https://github.com/Tweemo/Paataka' isExternal>
                 <b>Click for Repo</b>
