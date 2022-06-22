@@ -61,7 +61,7 @@ const OneProject = () => {
               <br/>
               <b>Time to complete:</b> 4 days
               <br/>
-              <b>Tweaks required:</b> Removing unecessary dispatches, refactoring large functions.
+              <b>Tweaks required:</b> Refactoring large functions into more efficient smaller functions. Make it look prettier.
               <br/>
               <b>New Tech:</b> ChakraUI
               <br/>
@@ -71,7 +71,7 @@ const OneProject = () => {
             </Text>
           </HStack>
           <Text as='i'>
-              Date added: May 17 2022
+              Date added: May 17 2022, Date updated: June 22 2022
           </Text>
         </VStack>
         <hr />
