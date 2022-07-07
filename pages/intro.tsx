@@ -16,11 +16,11 @@ const Intro = () => {
       </Center>
       <Center>
         <Center>
-          <Heading fontSize={['2xl','4xl']} p='20px'>
+          <Heading fontSize={['2xl','3xl','4xl']} p='20px'>
             This is me, Tim. 
           </Heading>
         </Center>
-        <Text align='center' fontSize={['xl','3xl']} className={styles.header}>
+        <Text align='center' fontSize={['xl','2xl','3xl']} className={styles.header}>
           I&apos;m A <del>Pharmacist</del> Web Developer.
         </Text>
       </Center>
