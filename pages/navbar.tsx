@@ -20,14 +20,14 @@ const Navbar = () => {
       </Center>   
       <Center>
         <Link href='/projects'>
-        <Text fontSize='xl'>
+        <Text fontSize={['2xl','2xl','2xl', '3xl']}>
           Projects
           </Text>
         </Link>
       </Center>
       <Center>
         <Link href='/contact'>
-          <Text fontSize='xl'>Contact</Text>
+          <Text fontSize={['2xl','2xl','2xl', '3xl']}>Contact</Text>
         </Link>
       </Center>   
     </SimpleGrid>
