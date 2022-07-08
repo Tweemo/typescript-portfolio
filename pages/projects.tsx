@@ -14,13 +14,13 @@ const Projects = () => {
     <>
       <Navbar />
         <Center>
-          <Heading>
+          <Heading marginBottom={[null, null, null, '20px']}>
             Projects In Progress:
           </Heading>
         </Center>
         {/* Each individual project would slot here
         eventually probs get a postgres db here to map through all of them, for now hard code project.  */}
-        <Box className={styles.box} h={['72vh','73vh','73.5vh','70vh']}>
+        <Box className={styles.box} h={['72vh','73vh','73.5vh','70.5vh']}>
           <OneProject/>
         </Box>
       <Socials />
