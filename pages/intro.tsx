@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.css'
 const Intro = () => {
   
   return (
-    <Box h={['41vh','40vh']}>
+    <Box h={['41vh','41.2vh','40vh']}>
       <Center>
         <Image className={styles.pic} src='images/pic.jpg' alt='me' />
       </Center>

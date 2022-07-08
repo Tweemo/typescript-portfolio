@@ -15,7 +15,7 @@ const OneProject = () => {
   return (
   <>
     <Center>
-      <LinkBox w={['100vw','200vw','30vw']} as='article' margin='20px'>
+      <LinkBox w={['85vw','100vw','30vw']} as='article' margin='20px'>
         <VStack>
           <Link href='/'>
             <Heading fontSize='xl'>
@@ -47,7 +47,7 @@ const OneProject = () => {
     </Center>
 
     <Center>
-      <LinkBox w={['100vw','200vw','30vw']}  as='article' margin='20px'>
+      <LinkBox w={['85vw','100vw','30vw']}  as='article' margin='20px'>
         <VStack>
           <Link href='https://tims-battleships.herokuapp.com/' isExternal>
             <Heading fontSize='xl'>
@@ -79,7 +79,7 @@ const OneProject = () => {
     </Center>
 
     <Center>
-      <LinkBox  w={['100vw','200vw','30vw']}  as='article' margin='20px'>
+      <LinkBox  w={['85vw','100vw','30vw']}  as='article' margin='20px'>
         <VStack>
           <Link href='/'>
             <Heading fontSize='xl'>
