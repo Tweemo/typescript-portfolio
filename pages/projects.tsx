@@ -20,7 +20,7 @@ const Projects = () => {
         </Center>
         {/* Each individual project would slot here
         eventually probs get a postgres db here to map through all of them, for now hard code project.  */}
-        <Box className={styles.box} h={['72vh','73vh','73.5vh','70.5vh', '68vh']}>
+        <Box className={styles.box} h={['72vh','73vh','73.5vh','70.5vh', '68vh', '71.5vh']}>
           <OneProject/>
         </Box>
       <Socials />
