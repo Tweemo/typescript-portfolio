@@ -15,7 +15,7 @@ const Contact = () => {
 return (
     <>
       <Navbar />
-      <Box h={['79.5vh','75vh','67.5vh','66.5vh']}>
+      <Box h={['79.5vh','75vh','67.5vh','66.5vh', '63vh']}>
         <Text color='gray' fontSize={['2xl','3xl', '4xl','4xl']} marginLeft={['20px','20px','40px','180px']} marginTop={['20px','40px','100px']}>
           Get In Touch
         </Text>
