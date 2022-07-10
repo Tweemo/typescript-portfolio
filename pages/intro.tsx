@@ -21,7 +21,7 @@ const Intro = () => {
           </Heading>
         </Center>
         <Text align='center' fontSize={['xl','2xl','3xl']} className={styles.header}>
-          I&apos;m A <del>Pharmacist</del> Web Developer.
+          I&apos;m a <del>Pharmacist</del> Web Developer.
         </Text>
       </Center>
     </Box>
