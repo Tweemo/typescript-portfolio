@@ -17,7 +17,7 @@ const OneProject = () => {
     <Center>
       <LinkBox w={['85vw','100vw','100vw','60vw', '60vw']} as='article' margin='20px'>
         <VStack>
-          <Link href='/'>
+          <Link href='https://paataka.herokuapp.com/'>
             <Heading fontSize='xl'>
               Pātaka
             </Heading>
