@@ -1,4 +1,5 @@
-Things I need to fix: 
-- Font size on mobile
-- Change/Fix layout for different device sizes (use Chakras array for different break points). 
-- add paataka to projects
+# Things I need to fix: 
+
+## - Improve UI for projects display
+## - Improve UI for contacts page
+

@@ -3,6 +3,7 @@ import {
   Container, 
   Text,
   Link,
+  Box,
 } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 import { AiFillLinkedin, AiOutlineGithub, AiOutlineCopyrightCircle } from 'react-icons/ai'
@@ -11,8 +12,8 @@ import NextLink from 'next/link'
 const Socials = () => {
   
   return (
-    <>
-      <Container className={styles.socials} bg='lightblue'>
+    <Box>
+      <Container className={styles.socials}>
         <NextLink href='https://www.linkedin.com/in/tim-liew-a9572b20b/' passHref>
           <Link>
             <AiFillLinkedin size='2.5rem' className={styles.icon}/>
@@ -30,7 +31,7 @@ const Socials = () => {
           Tim Liew 2022
         </Text>
       </Center>
-    </>
+    </Box>
     )
   }
 

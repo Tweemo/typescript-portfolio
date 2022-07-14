@@ -11,20 +11,20 @@ import styles from '../styles/Home.module.css'
 const Projects = () => {
   
   return (
-    <>
-      <Navbar />
-        <Center>
-          <Heading marginBottom={[null, null, null, '20px']}>
-            Projects In Progress:
+    <Box id='projects'>
+      {/* <Navbar /> */}
+        <Center h={'10vh'}>
+          <Heading color='scheme.text' marginBottom={[null, null, null, '20px']} marginTop={'20px'}>
+            Projects
           </Heading>
         </Center>
         {/* Each individual project would slot here
         eventually probs get a postgres db here to map through all of them, for now hard code project.  */}
-        <Box className={styles.box} h={['72vh','73vh','73.5vh','70.5vh', '68vh', '71.5vh']}>
+        <Box className={styles.box} h={['72vh','73vh','73.5vh','70.5vh', '68vh', '80vh']}>
           <OneProject/>
         </Box>
-      <Socials />
-    </>
+      {/* <Socials /> */}
+    </Box>
     )
   }
 

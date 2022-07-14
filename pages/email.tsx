@@ -13,7 +13,7 @@ return (
       <Center>
         <HStack>
           <AiOutlineMail />
-          <a href = "mailto: timothywrliew@gmail.com">Timothywrliew@gmail.com</a>
+          <a href="mailto: timothywrliew@gmail.com">Timothywrliew@gmail.com</a>
         </HStack>
       </Center>
     </Box>

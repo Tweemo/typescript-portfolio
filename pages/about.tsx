@@ -1,18 +1,20 @@
 import React from 'react'
-import { Text } from '@chakra-ui/react'
+import { Center, Text } from '@chakra-ui/react'
  
 const About = () => (
   <>
-    <Text color='gray' fontSize={['xl','2xl','3xl','4xl', '4xl','5xl']} marginLeft={['20px','70px','200px','300px', '30vh']} marginBottom={['20px','20px','30px','30px','80px']}>      
+    <Text color='scheme.title' fontSize={['xl','2xl','3xl','4xl', '4xl','5xl']} marginLeft={['20px','70px','200px','300px', '30vh']} marginBottom={['20px','20px','30px','30px','50px']}>      
       About me
     </Text>
-    <Text fontSize={['xl','2xl', '3xl','4xl','4xl','5xl']}  h={['28.5vh','30vh','30vh','27vh', '25vh', '30vh']} align='center' margin={['20px','5px', '0px']}>
-      I like to code things that either interest me or solve problems. 
-      <br />
-      I&apos;m interested in many things and have many solutions.
-      <br />
-      Pursuing random hobbies is my biggest hobby.
-    </Text>
+    <Center>
+      <Text color='scheme.text' fontSize={['xl','2xl', '3xl','4xl','4xl','4xl']}  h={['28.5vh','30vh','30vh','27vh', '25vh', '31.5vh']} w={['80vw']} align='center' margin={['20px','5px', '0px']}>
+        I decided to become a web developer because I felt like I was plateauing and wasn&apos;t going anywhere as a Pharmacist. 
+        Since becoming a developer, I have found excitement at the thought of being able to build anything that I can think of. 
+        <br/>
+        I tend to build projects that either solve inconveniences or are just cool. 
+        I figured if it makes my life easier, then it could make somebody else&apos;s easier too.
+      </Text>
+    </Center>
   </>
 )
 
