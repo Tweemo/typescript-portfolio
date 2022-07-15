@@ -4,9 +4,9 @@
 }
 
 .pic {
-  border-radius: 50%;
   height: 20vh;
   width: 20vh;
+  border-radius: 50%;
   border: #3b4c58 solid 4px;
   margin: 20px;
 }
@@ -28,4 +28,16 @@
 
 .box {
   overflow-y: scroll
+}
+
+.nextPage {
+  /* background-color: #f4e8cb; */
+  width: 30vw;
+  border-radius: 20px;
+  box-shadow: #3b4c58;
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
 }

@@ -11,8 +11,8 @@ import styles from '../styles/Home.module.css'
 const Navbar = () => {
   
   return (
-  <Box>
-    <SimpleGrid columns={3} h='5vh' padding={'1vh'}>
+  <Box bg={'white'} className={styles.nav}>
+    <SimpleGrid columns={3} h='7vh' padding={'1vh'}>
       <Center>
         <Link href='/'>
           <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>

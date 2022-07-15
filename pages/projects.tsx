@@ -7,6 +7,7 @@ import Navbar from './navbar'
 import Socials from './socials'
 import OneProject from './oneProject'
 import styles from '../styles/Home.module.css'
+import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav'
 
 const Projects = () => {
   

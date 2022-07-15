@@ -9,6 +9,7 @@ const theme = extendTheme({
       bg: "#ced7e0",
       title: "#7599b1",
       text: "#3b4c58",
+      button: "#81c4dd",
     },
   },
 })
