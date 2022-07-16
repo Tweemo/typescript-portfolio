@@ -13,16 +13,18 @@ import Intro from './intro'
 import NextPage from './toNextPage'
 
 const Homepage = () => {
-  
+
+  let page:Object = {title: "home"}
+
   return (
-    <Container bg={'lightblue'}>
+    <Container bg={'lightblue'} w='110vw' h={['104vh']}>
     <Center>
       <Flex direction={{base: 'column', md: 'row'}}>
         <Intro />
         <About />
       </Flex>
     </Center>
-      {/* <NextPage /> */}
+    <NextPage title={''} {...page}/>
     </Container>
     )
   }

@@ -1,26 +1,30 @@
 import {
   Text,
-  VStack,
+  Image,
   Link,
   Box,
   Center,
 } from '@chakra-ui/react'
-import { AiOutlineArrowDown } from 'react-icons/ai'
 import styles from '../styles/Home.module.css'
 
-const NextPage = () => {
-  
-return (
-  <Center>
-    <Box className={styles.nextPage}>
-      <Link color={'scheme.text'} href={'#projects'} h={'10vh'}>
-        <VStack>
-          <Text fontSize={['2xl']}>Projects</Text>
-          <AiOutlineArrowDown size={'2rem'}/>
-        </VStack>
+const NextPage = (prop: { title: string }) => {
+
+  let nextPage:string = '#projects'
+
+  if (prop.title === "home") {
+    nextPage = '#projects'
+  } else if (prop.title === 'projects') {
+    nextPage = '#contact'
+  }
+    
+    return (
+      <Box className={styles.nextPage} w='100vw' paddingTop={['10px']}>
+      <Link color={'scheme.text'} href={nextPage} h={'10vh'}>
+        <Center paddingTop={['10px']}>
+        <Image src='images/arrow-down.png' alt='down arrow'/>
+        </Center>
       </Link>
     </Box>
-  </Center>
   )
 }
 

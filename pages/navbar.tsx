@@ -11,10 +11,10 @@ import styles from '../styles/Home.module.css'
 const Navbar = () => {
   
   return (
-  <Box bg={'white'} className={styles.nav}>
+  <Box id='home' bg={'white'} className={styles.nav}>
     <SimpleGrid columns={3} h='7vh' padding={'1vh'}>
       <Center>
-        <Link href='/'>
+        <Link href='#home'>
           <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>
         </Link>
       </Center>   

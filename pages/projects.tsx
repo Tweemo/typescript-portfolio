@@ -8,11 +8,14 @@ import Socials from './socials'
 import OneProject from './oneProject'
 import styles from '../styles/Home.module.css'
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav'
+import NextPage from './toNextPage'
 
 const Projects = () => {
+
+  let page:Object = {title: "projects"}
   
   return (
-    <Box id='projects'>
+    <Box id='projects' padding={'5vh'}>
       {/* <Navbar /> */}
         <Center h={'10vh'}>
           <Heading color='scheme.text' marginBottom={[null, null, null, '20px']} marginTop={'20px'}>
@@ -25,6 +28,7 @@ const Projects = () => {
           <OneProject/>
         </Box>
       {/* <Socials /> */}
+      <NextPage title={''} {...page}/>
     </Box>
     )
   }
