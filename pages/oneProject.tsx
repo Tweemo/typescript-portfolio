@@ -7,42 +7,48 @@ import {
   Link,
   LinkBox,
   Center,
+  Button,
+  Box,
+  Collapse,
 } from '@chakra-ui/react'
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 const OneProject = () => {
+
+  const [show, setShow] = useState(false)
+
+  const handleToggle = () => setShow(!show)
   
   return (
   <>
     <Center>
-      <LinkBox w={['85vw','100vw','100vw','60vw', '60vw']} as='article' margin='20px'>
+      <LinkBox border='1px' borderRadius={['10px']} as='article' margin='20px' h={['auto']}>
         <VStack>
-          <Link href='https://paataka.herokuapp.com/'>
-            <Heading fontSize='xl'>
-              Pātaka
-            </Heading>
-          </Link>
-          <HStack>
-            <Image className={styles.projectIcon} boxSize='100px' src='https://tmctohealth.com/wp-content/uploads/2017/05/vegetables-vegetable-basket-harvest-garden-square.jpg' alt='Vege Basket'/>
-            <Text>
-              <b>Purpose:</b> Platform to redistribute excess food.
-              <br/>
-              <b>Time to complete:</b> 1 week
-              <br/>
-              <b>Tweaks required:</b> Mobile friendly, Listing status, Region filters, and comment manipulation.
-              <br/>
-              <b>Tech Stack:</b> React, Sqlite3, Knex, Express. 
-              <br/>
-              <Link href='https://github.com/Tweemo/Paataka' isExternal>
-                <b>Click for Repo</b>
-              </Link>
+          <Image borderRadius={['10px']} src='images/paataka/home1.png' alt='Paataka'/>
+          <Heading fontSize='2xl'>
+            Pātaka
+          </Heading>
+          <Collapse startingHeight={'15vh'} in={show}>
+            <Text p={'10px'} fontSize={['sm']} onClick={handleToggle}>
+              Pātaka was my final group project at Dev Academy. 
+              The aim of Pātaka was to create a community through sharing and redistribution of food.
+              
+              ...Read {show ? 'less' : 'more'}
             </Text>
+          </Collapse>
+          <HStack>
+            <Link href='https://github.com/Tweemo/Paataka' isExternal>
+              <Button>Repo</Button>
+            </Link>
+            <Link href='https://paataka.herokuapp.com/' isExternal>
+              <Button>App</Button>
+            </Link>
           </HStack>
-          <Text as='i'>
+          <Box roundedBottomLeft={['10px']} roundedBottomRight={['10px']} p={'10px'} textAlign={'center'} bg={'lightgrey'} w='full' as='i'>
             Date added: May 11 2022
-          </Text>
+          </Box>
         </VStack>
-        <hr />
       </LinkBox>
     </Center>
 

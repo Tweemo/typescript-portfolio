@@ -22,16 +22,11 @@
   margin: 15px;
 }
 
-.projectIcon {
-  border-radius: 20%;
-}
-
 .box {
   overflow-y: scroll
 }
 
 .nextPage {
-  /* background-color: #f4e8cb; */
   width: 30vw;
   border-radius: 20px;
   box-shadow: #3b4c58;

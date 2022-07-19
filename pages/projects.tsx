@@ -15,21 +15,25 @@ const Projects = () => {
   let page:Object = {title: "projects"}
   
   return (
-    <Box id='projects' padding={'5vh'}>
+    <>
+    <Box id='projects' paddingTop={'5vh'} >
       {/* <Navbar /> */}
-        <Center h={'10vh'}>
-          <Heading color='scheme.text' marginBottom={[null, null, null, '20px']} marginTop={'20px'}>
+        <Center h={'10vh'} w={'110vw'}>
+          <Heading color='scheme.text' >
             Projects
           </Heading>
         </Center>
         {/* Each individual project would slot here
-        eventually probs get a postgres db here to map through all of them, for now hard code project.  */}
-        <Box className={styles.box} h={['72vh','73vh','73.5vh','70.5vh', '68vh', '80vh']}>
+        eventually probs get a Mongodb here to map through all of them, for now hard code project.  */}
+        <Box className={styles.box} h={['90vh']} w={['110vw']}>
           <OneProject/>
         </Box>
       {/* <Socials /> */}
-      <NextPage title={''} {...page}/>
     </Box>
+    <Center w={['110vw']}>
+      <NextPage title={''} {...page}/>
+    </Center>
+        </>
     )
   }
 
