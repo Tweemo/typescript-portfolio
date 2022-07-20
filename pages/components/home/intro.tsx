@@ -5,7 +5,7 @@ import {
   Center,
   VStack,
 } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
+import styles from '../../../styles/Home.module.css'
 
 const Intro = () => {
   

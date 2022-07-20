@@ -1,15 +1,10 @@
 import {
-  Image,
-  Heading,
-  Text,
   Center,
-  Box,
   Container,
   Flex,
 } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
-import About from './about'
-import Intro from './intro'
+import About from './components/home/about'
+import Intro from './components/home/intro'
 import NextPage from './toNextPage'
 
 const Homepage = () => {

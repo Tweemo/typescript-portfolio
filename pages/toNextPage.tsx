@@ -1,5 +1,4 @@
 import {
-  Text,
   Image,
   Link,
   Box,

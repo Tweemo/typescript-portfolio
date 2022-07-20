@@ -5,7 +5,7 @@ import {
   Link,
   Box,
 } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { AiFillLinkedin, AiOutlineGithub, AiOutlineCopyrightCircle } from 'react-icons/ai'
 import NextLink from 'next/link'
 
