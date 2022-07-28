@@ -18,8 +18,8 @@ const Projects = () => {
       description: 'Pātaka was my final group project at Dev Academy. The aim of Pātaka was to create a community through sharing and redistribution of food.',
       github: 'https://github.com/Tweemo/Paataka',
       app: 'https://paataka.herokuapp.com/',
-      images:'images/paataka/home1.png',
-      dateAdded: 'Date added: May 11 2022'
+      images:'/images/paataka/home1.png',
+      state: 'Ongoing'
     },
     {
       id:2,
@@ -27,8 +27,8 @@ const Projects = () => {
       description: 'I built this battleships game as part of my tech challenge for Raygun. Initially, I had an excessive amount of thunks being dispatched but with the feedback given to me, I reduced the code and made it more efficient.',
       github: 'https://github.com/Tweemo/battleships',
       app: 'https://tims-battleships.herokuapp.com/',
-      images:'https://www.mobygames.com/images/covers/l/396111-battleship-playstation-4-front-cover.png',
-      dateAdded: 'Date added: May 17 2022, Date updated: June 22 2022'
+      images:'/images/battleships.png',
+      state: 'Ongoing'
     },
     {
       id:3,
@@ -36,8 +36,8 @@ const Projects = () => {
       description: 'I created this portfolio as a means to display my projects as well as dipping into some new technology that I have not used before.',
       github: 'https://github.com/Tweemo/typescript-portfolio',
       app: '#',
-      images:'images/TLFrame_Black_01.png',
-      dateAdded: 'Date added: June 14 2022'
+      images:'/images/TLFrame_Black_01.png',
+      state: 'Ongoing'
     },
   ]
 
@@ -45,17 +45,17 @@ const Projects = () => {
   
   return (
     <>
-      <Box id='projects' paddingTop={'5vh'} >
-        <Center h={'10vh'} w={'110vw'}>
+      <Box id='projects' paddingTop={'5vh'} w={'110vw'}>
+        <Center h={'10vh'}>
           <Heading color='scheme.text' >
             Projects
           </Heading>
         </Center>
-        <Box className={styles.box} h={['90vh']} w={['110vw']}>
+        <Box bg='pink' className={styles.box} h={['88vh']}>
           {projects.map(project => <OneProject key={project.id} {...project}/>)}
         </Box>
       </Box>
-      <Center w={['110vw']}>
+      <Center w={'110vw'}>
         <NextPage title={''} {...page}/>
       </Center>
     </>

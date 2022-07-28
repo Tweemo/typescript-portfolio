@@ -36,4 +36,9 @@
   position: sticky;
   top: 0px;
   width: 110vw;
+  z-index: 2;
+}
+
+.image {
+  border-radius: 10px;
 }

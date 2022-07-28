@@ -19,7 +19,9 @@ const Homepage = () => {
         <About />
       </Flex>
     </Center>
-    <NextPage title={''} {...page}/>
+    <Center>
+      <NextPage title={''} {...page}/>
+    </Center>
     </Container>
     )
   }

@@ -17,14 +17,14 @@ const NextPage = (prop: { title: string }) => {
   }
     
     return (
-      <Box className={styles.nextPage} w='100vw' paddingTop={['10px']}>
+    <Box className={styles.nextPage} padding={['1vh']}>
       <Link color={'scheme.text'} href={nextPage} h={'10vh'}>
         <Center paddingTop={['10px']}>
-        <Image src='images/arrow-down.png' alt='down arrow'/>
+          <Image src='images/arrow-down.png' alt='down arrow'/>
         </Center>
       </Link>
     </Box>
-  )
+)
 }
 
   export default NextPage

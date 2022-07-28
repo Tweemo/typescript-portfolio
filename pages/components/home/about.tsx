@@ -6,7 +6,7 @@ const About = () => (
     <Text textAlign={'left'} w={['90vw']} color='scheme.title' fontSize={['3xl']} p={['20px']}>      
       About me
     </Text>
-    <Text color='scheme.text' fontSize={['lg']} padding={['20px']} paddingTop={['0px']}>
+    <Text color='scheme.text' fontSize={['md','null','lg']} padding={['20px']} paddingTop={['0px']}>
       I decided to become a web developer because I felt like I was plateauing and wasn&apos;t going anywhere as a Pharmacist. 
       Since becoming a developer, I have found excitement at the thought of being able to build anything that I can think of. 
       <br/>

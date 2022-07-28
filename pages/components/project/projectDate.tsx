@@ -2,13 +2,13 @@ import {
   Box,
 } from '@chakra-ui/react'
 
-const ProjectDate = (project: { dateAdded: string }) => {
+const ProjectState = (project: { state: string }) => {
   
   return (
     <Box roundedBottomLeft={['10px']} roundedBottomRight={['10px']} p={'10px'} textAlign={'center'} bg={'lightgrey'} w='full' as='i'>
-       {project.dateAdded}
+       State: {project.state}
     </Box>
     )
   }
 
-  export default ProjectDate
+  export default ProjectState

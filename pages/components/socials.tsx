@@ -12,7 +12,7 @@ import NextLink from 'next/link'
 const Socials = () => {
   
   return (
-    <Box>
+    <Box w={'110vw'}>
       <Container className={styles.socials}>
         <NextLink href='https://www.linkedin.com/in/tim-liew-a9572b20b/' passHref>
           <Link>

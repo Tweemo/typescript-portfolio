@@ -11,8 +11,8 @@ import Email from './components/contact/email'
 const Contact = () => {
   
 return (
-    <Box id='contact' h={['79.5vh','75vh','70.5vh','66.5vh', '63vh', '90vh']}>
-      <Text color='scheme.title' fontSize={['2xl','3xl', '4xl','4xl','5xl']} marginLeft={['20px','20px','40px','180px','200px', '30vh']} marginTop={['20px','40px','76px', '105px']}>
+    <Box id='contact' h={['87vh']} w='110vw'>
+      <Text color='scheme.title' fontSize={{base: '3xl'}} w='110vw' align='center' left={{base: '10vh'}} marginTop={{base: '5vh'}} paddingTop='5vh'>
         Get In Touch
       </Text>
       <Center>
