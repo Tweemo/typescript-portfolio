@@ -12,7 +12,7 @@ const Homepage = () => {
   let page:Object = {title: "home"}
 
   return (
-    <Container bg={'lightblue'} w='110vw' h={['104vh']}>
+    <Container bg={'lightblue'} w='100vw' h={['104vh']}>
     <Center>
       <Flex direction={{base: 'column', md: 'row'}}>
         <Intro />

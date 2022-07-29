@@ -12,8 +12,8 @@ const Contact = () => {
   
 return (
   <>
-    <Box id='contact' h={['87vh']} w='110vw'>
-      <Text color='scheme.title' fontSize={{base: '3xl'}} w='110vw' align='center' left={{base: '10vh'}} marginTop={{base: '5vh'}} paddingTop='5vh'>
+    <Box id='contact' h={['87vh']} w='100vw'>
+      <Text color='scheme.title' fontSize={{base: '3xl'}} w='100vw' align='center' left={{base: '10vh'}} marginTop={{base: '5vh'}} paddingTop='5vh'>
         Get In Touch
       </Text>
       <Center>
@@ -26,7 +26,7 @@ return (
         <Linkedin />
       </Flex>
     </Box>
-    <Center w={'110vw'}>
+    <Center w={'100vw'}>
       <TopPage /> 
     </Center>
   </>

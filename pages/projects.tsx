@@ -44,7 +44,7 @@ const Projects = () => {
   
   return (
     <>
-      <Box id='projects' paddingTop={'5vh'} w={'110vw'}>
+      <Box id='projects' paddingTop={'5vh'} w={'100vw'}>
         <Center h={'10vh'}>
           <Heading color='scheme.text' >
             Projects
@@ -54,7 +54,7 @@ const Projects = () => {
           {projects.map(project => <OneProject key={project.id} {...project}/>)}
         </Box>
       </Box>
-      <Center w={'110vw'}>
+      <Center w={'100vw'}>
         <NextPage title={''} {...page}/>
       </Center>
     </>
