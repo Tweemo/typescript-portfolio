@@ -5,10 +5,9 @@ import {
 } from '@chakra-ui/react'
 import OneProject from './components/project/oneProject'
 import styles from '../styles/Home.module.css'
-import NextPage from './toNextPage'
+import NextPage from './components/toNextPage'
 
 const Projects = () => {
-
 
   // Need to get this array/info into MongoDB instead of being hardcoded.
   let projects = [
@@ -51,7 +50,7 @@ const Projects = () => {
             Projects
           </Heading>
         </Center>
-        <Box bg='pink' className={styles.box} h={['88vh']}>
+        <Box bg='white' className={styles.box} h={['88vh']}>
           {projects.map(project => <OneProject key={project.id} {...project}/>)}
         </Box>
       </Box>

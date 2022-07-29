@@ -7,10 +7,12 @@ import {
 } from '@chakra-ui/react'
 import Linkedin from './components/contact/linkedin'
 import Email from './components/contact/email'
+import TopPage from './components/toTopPage'
 
 const Contact = () => {
   
 return (
+  <>
     <Box id='contact' h={['87vh']} w='110vw'>
       <Text color='scheme.title' fontSize={{base: '3xl'}} w='110vw' align='center' left={{base: '10vh'}} marginTop={{base: '5vh'}} paddingTop='5vh'>
         Get In Touch
@@ -25,6 +27,10 @@ return (
         <Linkedin />
       </Flex>
     </Box>
+    <Center w={'110vw'}>
+      <TopPage /> 
+    </Center>
+  </>
   )
 }
 

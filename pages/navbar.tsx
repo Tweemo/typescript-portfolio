@@ -1,35 +1,20 @@
 import {
-  Image,
   Box,
   SimpleGrid,
-  Text,
-  Center,
-  Link,
 } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
+import NavProject from './components/nav/navProjects'
+import NavLogo from './components/nav/navLogo'
+import NavContact from './components/nav/navContact'
 
 const Navbar = () => {
   
   return (
   <Box bg={'white'} className={styles.nav}>
     <SimpleGrid columns={3} h='7vh' padding={'1vh'}>
-      <Center>
-        <Link href='#'>
-          <Image className={styles.logo} src='images/TL_Black_01.png' alt='logo'/>
-        </Link>
-      </Center>   
-      <Center>
-        <Link href='#projects'>
-        <Text color='scheme.text' fontSize={['2xl','2xl','2xl', '3xl']}>
-          Projects
-          </Text>
-        </Link>
-      </Center>
-      <Center>
-        <Link href='#contact'>
-          <Text color='scheme.text' fontSize={['2xl','2xl','2xl', '3xl']}>Contact</Text>
-        </Link> 
-      </Center>   
+      <NavLogo />
+      <NavProject />
+      <NavContact />
     </SimpleGrid>
   </Box>
     )

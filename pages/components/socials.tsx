@@ -13,7 +13,7 @@ const Socials = () => {
   
   return (
     <Box w={'110vw'}>
-      <Container className={styles.socials}>
+      <Container bg={'lightblue'} className={styles.socials}>
         <NextLink href='https://www.linkedin.com/in/tim-liew-a9572b20b/' passHref>
           <Link>
             <AiFillLinkedin size='2.5rem' className={styles.icon}/>

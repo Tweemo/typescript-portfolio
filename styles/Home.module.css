@@ -42,3 +42,8 @@
 .image {
   border-radius: 10px;
 }
+
+.topPage {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}

@@ -5,7 +5,7 @@ import {
 } from '@chakra-ui/react'
 import About from './components/home/about'
 import Intro from './components/home/intro'
-import NextPage from './toNextPage'
+import NextPage from './components/toNextPage'
 
 const Homepage = () => {
 
