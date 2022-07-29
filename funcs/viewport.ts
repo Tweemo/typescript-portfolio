@@ -18,7 +18,6 @@ function getViewport() {
   else {
     viewPortWidth = document.getElementsByTagName('body')[0].clientWidth
   }
-  console.log(viewPortWidth);
   return viewPortWidth;
  }
 

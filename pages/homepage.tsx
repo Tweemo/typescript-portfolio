@@ -13,15 +13,15 @@ const Homepage = () => {
 
   return (
     <Container bg={'lightblue'} w='100vw' h={['104vh']}>
-    <Center>
-      <Flex direction={{base: 'column', md: 'row'}}>
-        <Intro />
-        <About />
-      </Flex>
-    </Center>
-    <Center>
-      <NextPage title={''} {...page}/>
-    </Center>
+      <Center>
+        <Flex direction={{base: 'column', md: 'row'}}>
+          <Intro />
+          <About />
+        </Flex>
+      </Center>
+      <Center>
+        <NextPage title={''} {...page}/>
+      </Center>
     </Container>
     )
   }
