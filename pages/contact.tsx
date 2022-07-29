@@ -5,8 +5,7 @@ import {
   Box,
   Flex,
 } from '@chakra-ui/react'
-import Linkedin from './components/contact/linkedin'
-import Email from './components/contact/email'
+import { Linkedin, Email } from './components/contact/'
 import TopPage from './components/toTopPage'
 
 const Contact = () => {

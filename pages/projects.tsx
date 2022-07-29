@@ -3,7 +3,7 @@ import {
   Box,
   Center,
 } from '@chakra-ui/react'
-import OneProject from './components/project/oneProject'
+import { OneProject } from './components/project/'
 import styles from '../styles/Home.module.css'
 import NextPage from './components/toNextPage'
 

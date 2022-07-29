@@ -3,13 +3,8 @@ import {
   VStack,
   LinkBox,
   Center,
-  Container,
 } from '@chakra-ui/react'
-import ProjectButtons from './projectButtons'
-import ProjectDate from './projectDate'
-import ProjectText from './projectText'
-import Image from 'next/image'
-import ProjectImage from './projectImage'
+import {ProjectButtons ,ProjectDate, ProjectImage, ProjectText} from './'
 
 const OneProject = (project: { title: string, description: string, github: string, app: string, images: string, state: string }) => {
   
