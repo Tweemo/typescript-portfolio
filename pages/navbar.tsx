@@ -3,9 +3,7 @@ import {
   SimpleGrid,
 } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
-import NavProject from './components/nav/navProjects'
-import NavLogo from './components/nav/navLogo'
-import NavContact from './components/nav/navContact'
+import {NavProject, NavLogo, NavContact} from './components/nav/'
 
 const Navbar = () => {
   
