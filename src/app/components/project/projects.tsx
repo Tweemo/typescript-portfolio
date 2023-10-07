@@ -40,9 +40,8 @@ export default function Projects() {
     },
   ]
   const currentProject = projects.find((p) => p.title === project)
-  const { id, title, description, github, app, images, state } = currentProject
-    ? currentProject
-    : projects[0]
+  const { id, title, description, github, app, images, state } =
+    currentProject ?? projects[0]
 
   return (
     <div className={styles.container}>
