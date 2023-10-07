@@ -1,9 +1,8 @@
-import { OneProject } from './components/project/'
-import styles from '../styles/Home.module.css'
+import OneProject from './components/project/project'
 
-const Projects = () => {
+export default function Projects() {
   // Need to get this array/info into MongoDB instead of being hardcoded.
-  let projects = [
+  const projects = [
     {
       id: 1,
       title: 'Pātaka',
@@ -38,12 +37,10 @@ const Projects = () => {
 
   return (
     <>
-      <h3 color="scheme.text">Projects</h3>
+      <h3>Projects</h3>
       {projects.map((project) => (
         <OneProject key={project.id} {...project} />
       ))}
     </>
   )
 }
-
-export default Projects

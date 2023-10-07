@@ -1,4 +1,4 @@
-import styles from '../../styles/Home.module.css'
+import styles from './social.module.scss'
 import {
   AiFillLinkedin,
   AiOutlineGithub,
@@ -6,7 +6,7 @@ import {
 } from 'react-icons/ai'
 import Link from 'next/link'
 
-const Socials = () => {
+export default function Socials() {
   return (
     <>
       <Link href="https://www.linkedin.com/in/tim-liew-a9572b20b/" passHref>
@@ -20,5 +20,3 @@ const Socials = () => {
     </>
   )
 }
-
-export default Socials
