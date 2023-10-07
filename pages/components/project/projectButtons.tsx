@@ -1,27 +1,22 @@
-import {
-  HStack,
-  Link,
-  Button,
-} from '@chakra-ui/react'
+import Link from 'next/link'
 
-const ProjectButtons = (project: {app: string, github: string}) => {
-  
+const ProjectButtons = (project: { app: string; github: string }) => {
   return (
-    <HStack>
-      <Link href={project.github} isExternal>
-        <Button>Repo</Button>
+    <>
+      <Link href={project.github} target="_blank">
+        <button>Repo</button>
       </Link>
-      {(project.app === '#')?
+      {project.app === '#' ? (
         <Link href={project.app}>
-          <Button>App</Button>
+          <button>App</button>
         </Link>
-        :
-        <Link href={project.app} isExternal>
-          <Button>App</Button>
+      ) : (
+        <Link href={project.app} target="_blank">
+          <button>App</button>
         </Link>
-      }
-    </HStack>
-    )
-  }
+      )}
+    </>
+  )
+}
 
-  export default ProjectButtons
+export default ProjectButtons

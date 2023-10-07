@@ -1,24 +1,18 @@
-import {
-  Link,
-  Text,
-  Center,
-  HStack,
-  Box,
-} from '@chakra-ui/react'
 import { AiFillLinkedin } from 'react-icons/ai'
+import Link from 'next/link'
 
 const Linkedin = () => {
-  
-return (
-    <Box fontSize={['2xl','2xl','3xl','3xl','4xl']} w={'100vw'} margin={['20px']}>
-      <Center>
-        <HStack>
-          <AiFillLinkedin />
-          <Link href='https://www.linkedin.com/in/tim-liew-a9572b20b/' isExternal>Tim Liew</Link>
-        </HStack>
-      </Center>
-    </Box>
+  return (
+    <>
+      <AiFillLinkedin />
+      <Link
+        href="https://www.linkedin.com/in/tim-liew-a9572b20b/"
+        target="_blank"
+      >
+        Tim Liew
+      </Link>
+    </>
   )
 }
 
-  export default Linkedin
+export default Linkedin
