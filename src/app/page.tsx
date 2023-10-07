@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
+    <div className="home">
       <link rel="icon" href="images/favicon.ico" />
       <Navbar />
       <Homepage />
       <Projects />
       <Contact />
-    </>
+    </div>
   )
 }
