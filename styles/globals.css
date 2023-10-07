@@ -18,3 +18,10 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-block: 2rem;
+}

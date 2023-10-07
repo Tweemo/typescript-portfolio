@@ -1,8 +1,13 @@
-import OneProject from './components/project/project'
+'use client'
+
+import { useState } from 'react'
+import Project, { ProjectProps } from './project'
+import styles from './projects.module.scss'
 
 export default function Projects() {
+  const [project, setProject] = useState('Pātaka')
   // Need to get this array/info into MongoDB instead of being hardcoded.
-  const projects = [
+  const projects: ProjectProps[] = [
     {
       id: 1,
       title: 'Pātaka',
@@ -34,13 +39,34 @@ export default function Projects() {
       state: 'Ongoing',
     },
   ]
+  const currentProject = projects.find((p) => p.title === project)
+  const { id, title, description, github, app, images, state } = currentProject
+    ? currentProject
+    : projects[0]
 
   return (
-    <>
-      <h3>Projects</h3>
-      {projects.map((project) => (
-        <OneProject key={project.id} {...project} />
-      ))}
-    </>
+    <div className={styles.container}>
+      <h2>Projects</h2>
+      <div className={styles.wrapper}>
+        <div className={styles.titles}>
+          {projects.map(({ title }) => (
+            <button key={title} onClick={() => setProject(title)}>
+              <h2>{title}</h2>
+            </button>
+          ))}
+        </div>
+        <div className={styles.projects}>
+          <Project
+            key={id}
+            title={title}
+            description={description}
+            github={github}
+            app={app}
+            images={images}
+            state={state}
+          />
+        </div>
+      </div>
+    </div>
   )
 }

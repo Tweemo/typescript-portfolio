@@ -2,7 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './project.module.scss'
 
-interface ProjectProps {
+export interface ProjectProps {
+  id?: number
   title: string
   description: string
   github: string
@@ -11,7 +12,7 @@ interface ProjectProps {
   state: string
 }
 
-export default function OneProject({
+export default function Project({
   title,
   description,
   github,
@@ -20,7 +21,7 @@ export default function OneProject({
   state,
 }: ProjectProps) {
   return (
-    <>
+    <div className={styles.container}>
       <Image
         className={styles.image}
         src={images}
@@ -33,16 +34,10 @@ export default function OneProject({
       <Link href={github} target="_blank">
         <button>Repo</button>
       </Link>
-      {app === '#' ? (
-        <Link href={app}>
-          <button>App</button>
-        </Link>
-      ) : (
-        <Link href={app} target="_blank">
-          <button>App</button>
-        </Link>
-      )}{' '}
+      <Link href={app} target="_blank">
+        <button>App</button>
+      </Link>
       <div>State: {state}</div>
-    </>
+    </div>
   )
 }
