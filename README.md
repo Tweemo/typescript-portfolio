@@ -1,5 +1,3 @@
-# Things I need to fix: 
-
-## - Improve UI for projects display
-## - Improve UI for contacts page
-
+Things I need to fix: 
+- Font size on mobile
+- Make it mobile friendly
