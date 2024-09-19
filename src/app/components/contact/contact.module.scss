@@ -1,3 +1,6 @@
+@use '/styles/utilities.scss' as global;
+@use '/styles/colors.scss' as colors;
+
 .container {
   display: flex;
   justify-content: center;
@@ -7,5 +10,12 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @include global.hover-focus-active {
+      color: colors.$primary;
+      svg {
+        fill: colors.$primary;
+      }
+    }
   }
 }

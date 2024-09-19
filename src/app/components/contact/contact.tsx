@@ -1,28 +1,41 @@
 import Link from 'next/link'
 import { AiOutlineMail, AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai'
 import styles from './contact.module.scss'
+import { IconType } from 'react-icons'
 
 export default function Contact() {
+  interface socialsProp {
+    href: string
+    Icon: IconType
+    text: string
+  }
+
+  const socials: socialsProp[] = [
+    {
+      href: 'mailto: timothywrliew@gmail.com',
+      Icon: AiOutlineMail,
+      text: 'Timothywrliew@gmail.com',
+    },
+    {
+      href: 'https://www.linkedin.com/in/tim-liew/',
+      Icon: AiFillLinkedin,
+      text: 'Tim Liew',
+    },
+    {
+      href: 'https://github.com/Tweemo',
+      Icon: AiOutlineGithub,
+      text: 'Tweemo',
+    },
+  ]
+
   return (
     <div className={styles.container}>
-      <div className={styles.social}>
-        <AiOutlineMail size="2.5rem" />
-        <a href="mailto: timothywrliew@gmail.com">Timothywrliew@gmail.com</a>
-      </div>
-      <div className={styles.social}>
-        <AiFillLinkedin size="2.5rem" />
-        <Link
-          href="https://www.linkedin.com/in/tim-liew-a9572b20b/"
-          target="_blank"
-        />
-        Tim Liew
-      </div>
-      <div className={styles.social}>
-        <Link href="https://github.com/Tweemo" passHref>
-          <AiOutlineGithub size="2.5rem" />
+      {socials.map(({ text, href, Icon }) => (
+        <Link href={href} key={text} className={styles.social} target="_blank">
+          <Icon size="2.5rem" />
+          {text}
         </Link>
-        Tweemo
-      </div>
+      ))}
     </div>
   )
 }
