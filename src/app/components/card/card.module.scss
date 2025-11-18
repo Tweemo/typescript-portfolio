@@ -25,7 +25,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  background-color: colors.$pink;
+  background-color: colors.$primary;
   padding: 5rem;
   border-radius: 1rem;
   box-shadow: 8px 8px 15px 0px grey;
@@ -37,7 +37,7 @@
   margin-block: 2rem;
   margin-inline: auto;
   padding: 1rem;
-  cursor: pointer;
+  // cursor: pointer;
   font-size: 2rem;
   font-weight: 600;
   border-width: 3px;

@@ -2,7 +2,8 @@
 
 import Image from 'next/image'
 import styles from './frontpage.module.scss'
-import Profile from '/public/images/pic.jpg'
+import Profile from '/public/images/profile_pic.jpg'
+import Contact from '../contact/contact'
 import clsx from 'clsx'
 
 export default function FrontPage({
@@ -13,7 +14,7 @@ export default function FrontPage({
   handleFlip: () => void
 }) {
   return (
-    <button className={clsx(styles.container, className)} onClick={handleFlip}>
+    <div className={clsx(styles.container, className)} onClick={handleFlip}>
       <div className={styles.content}>
         <Image
           className={styles.pic}
@@ -26,14 +27,20 @@ export default function FrontPage({
           <h1>Tim Liew</h1>
           <h2>Software Engineer</h2>
           <p className={styles.description}>
-            I am passionate about building software that solves real-world
-            problems and creating innovative solutions. I thrive on continuous
-            learning and enjoy collaborating with others to share knowledge and
-            expertise.
+            <span>
+              I am passionate about building solutions that helps solve problems
+              at scale.
+            </span>
+            <span>
+              I enjoy collaborating with cross-functional teams and creating a
+              performant and enjoyable environment.
+            </span>
+            <span>I thrive when given the opportunity to learn and grow.</span>
           </p>
         </div>
       </div>
-      <h3>Click anywhere to flip</h3>
-    </button>
+      <Contact />
+      {/* <h3>Click anywhere to flip</h3> */}
+    </div>
   )
 }
