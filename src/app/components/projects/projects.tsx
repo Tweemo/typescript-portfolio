@@ -6,7 +6,7 @@ export default function Projects() {
     {
       name: 'Totara',
       description:
-        'Developed and maintained core platform functionalities, building robust server-side logic while simultaneously engineering intuitive, user-friendly interfaces for educational administrators."',
+        'Developed and maintained core platform functionalities, building robust server-side logic while simultaneously engineering intuitive, user-friendly interfaces for educational administrators.',
       tech: [
         'Vuejs',
         'PHP',
