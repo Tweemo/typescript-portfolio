@@ -1,0 +1,32 @@
+@use '../../../../styles/utilities.scss' as global;
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #FCF9EA;
+  border-radius: 1rem;
+
+  @include global.hover-focus-active {
+    transform: translateY(-0.5rem);
+    transition: transform 0.2s ease-out;
+  }
+
+  .image {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    padding-inline: 1rem;
+    background-color: #fff;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .Mondplan {
+    background-color: #4353ff;
+  }
+
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

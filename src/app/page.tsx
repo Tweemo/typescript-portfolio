@@ -1,11 +1,17 @@
 import { Metadata } from 'next'
-import '/styles/globals.css'
-import Card from './components/card/card'
+import Projects from './components/projects/projects'
+import BasicInfo from './components/basicInfo/basicInfo'
+import '../../styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Tim Liew',
 }
 
 export default function Page() {
-  return <Card />
+  return (
+    <>
+      <BasicInfo />
+      <Projects />
+    </>
+  )
 }

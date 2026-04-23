@@ -1,0 +1,34 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/utilities.scss' as global;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 8rem;
+
+  .pic {
+    border-radius: 50%;
+    object-position: right;
+    object-fit: cover;
+    border: 4px solid #BADFDB;
+  }
+    
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 2rem;
+
+    span {
+      width: 30rem;
+      text-align: center;
+
+      @include global.mobile {
+        width: 20rem;
+      }
+    }
+  }
+}
