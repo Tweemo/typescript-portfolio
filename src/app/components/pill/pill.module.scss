@@ -1,7 +1,16 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/utilities.scss' as global;
+
 .pill {
   display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background-color: #eee;
+  padding: 0.4rem 1rem;
+  border: 2px solid colors.$border;
   border-radius: 9999px;
   font-size: 0.875rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+
+  @include global.hover-focus-active {
+    border-color: colors.$brand;
+    transform: scale(1.05);
+  }
 }

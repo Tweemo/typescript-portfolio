@@ -1,32 +1,123 @@
+@use '../../../../styles/colors.scss' as colors;
 @use '../../../../styles/utilities.scss' as global;
 
-.projectCard {
-  display: flex;
-  flex-direction: column;
-  background-color: #FCF9EA;
-  border-radius: 1rem;
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border: 1px solid colors.$border;
+  border-radius: 1.5rem;
+  background: colors.$background;
+  transition: border-color 0.2s ease;
 
   @include global.hover-focus-active {
-    transform: translateY(-0.5rem);
-    transition: transform 0.2s ease-out;
+    border-color: rgba(colors.$brand, 0.5);
   }
 
-  .image {
-    position: relative;
-    width: 100%;
-    object-fit: contain;
-    padding-inline: 1rem;
-    background-color: #fff;
-    border-radius: 1rem 1rem 0 0;
+  @include global.desktop {
+    &:nth-child(odd) {
+      margin-right: 8rem;
+    }
+    &:nth-child(even) {
+      margin-left: 8rem;
+    }
   }
 
-  .Mondplan {
-    background-color: #4353ff;
+  @include global.mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reversed {
+  .media {
+    order: 2;
+  }
+  .body {
+    order: 1;
   }
 
-  .tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  @include global.mobile {
+    .media {
+      order: 1;
+    }
+    .body {
+      order: 2;
+    }
+  }
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(colors.$chart-2, 0.35), rgba(colors.$chart-1, 0.2));
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.7s ease;
+
+  .card:hover & {
+    transform: scale(1.08);
+  }
+}
+
+.mediaInitial {
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(colors.$foreground, 0.4);
+}
+
+.Mondplan {
+  background: linear-gradient(135deg, rgba(#4353ff, 0.25), rgba(colors.$chart-2, 0.2));
+}
+
+.Totara {
+  background: linear-gradient(135deg, #2a9d8f59, #cae07433);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 3rem;
+
+  @include global.mobile {
+    padding: 2rem;
+  }
+}
+
+.name {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.description {
+  margin: 0;
+  color: colors.$muted-foreground;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.view {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: colors.$brand;
+  font-weight: 600;
+  transition: gap 0.2s ease;
+
+  .card:hover & {
+    gap: 1rem;
   }
 }

@@ -58,20 +58,25 @@ export default function Projects() {
   ]
 
   return (
-    <div className={styles.container}>
-      <h1>Projects</h1>
+    <section id="work" className={styles.container}>
+      <div className={styles.heading}>
+        <h1>Experience</h1>
+      </div>
       <div className={styles.projectList}>
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} index={index} {...project} />
         ))}
       </div>
 
-      <h1>WIP Projects</h1>
+      <div className={styles.heading}>
+        <h1>Personal Projects</h1>
+        <p>Things I&apos;m tinkering with on the side</p>
+      </div>
       <div className={styles.projectList}>
         {wipProjects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <ProjectCard key={index} index={index} {...project} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

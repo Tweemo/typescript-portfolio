@@ -1,34 +1,149 @@
 @use '../../../../styles/colors.scss' as colors;
 @use '../../../../styles/utilities.scss' as global;
 
-.container {
+.root {
+  position: relative;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  overflow-x: clip;
+}
+
+.nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  margin: 8rem;
+  padding-block: 2rem;
+}
 
-  .pic {
-    border-radius: 50%;
-    object-position: right;
-    object-fit: cover;
-    border: 4px solid #BADFDB;
-  }
-    
-  .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-inline: 2rem;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
 
-    span {
-      width: 30rem;
-      text-align: center;
+.logoMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, colors.$chart-1, colors.$chart-2);
+}
 
-      @include global.mobile {
-        width: 20rem;
-      }
+.navLinks {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    @include global.hover-focus-active {
+      color: colors.$muted-foreground;
     }
+    transition: color 0.2s ease;
+  }
+
+  @include global.mobile {
+    gap: 1.25rem;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: 5rem;
+
+  @include global.mobile {
+    padding-block: 3rem;
+    gap: 2rem;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.headline {
+  font-size: 5rem;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  max-width: 56rem;
+  margin: 0;
+
+  @include global.mobile {
+    font-size: 2.75rem;
+  }
+}
+
+.gradient {
+  font-style: italic;
+  background: linear-gradient(135deg, colors.$chart-1, colors.$chart-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @include global.mobile {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+.pic {
+  flex-shrink: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: right;
+  border: 4px solid colors.$chart-2;
+}
+
+.description {
+  h2 {
+    margin: 0 0 0.5rem;
+  }
+
+  p {
+    margin: 0;
+    color: colors.$muted-foreground;
+    max-width: 32rem;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background: colors.$foreground;
+  color: colors.$background;
+  transition: transform 0.2s ease;
+
+  @include global.hover-focus-active {
+    transform: scale(1.05);
+    color: colors.$background;
   }
 }

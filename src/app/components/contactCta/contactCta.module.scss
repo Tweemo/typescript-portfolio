@@ -1,0 +1,84 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/utilities.scss' as global;
+
+.container {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 8rem 1.5rem;
+
+  @include global.mobile {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem;
+  border-radius: 3rem;
+  background: colors.$foreground;
+  text-align: center;
+
+  @include global.mobile {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.emojiTop,
+.emojiBottom {
+  position: absolute;
+  font-size: 8rem;
+  opacity: 0.1;
+  line-height: 1;
+}
+
+.emojiTop {
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+.emojiBottom {
+  bottom: 2.5rem;
+  left: 2.5rem;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1.1;
+  color: colors.$background;
+
+  @include global.mobile {
+    font-size: 2.5rem;
+  }
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+  color: rgba(colors.$background, 0.7);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 3rem;
+  border-radius: 9999px;
+  background: colors.$background;
+  color: colors.$foreground;
+  transition: transform 0.2s ease;
+
+  @include global.hover-focus-active {
+    transform: scale(1.05);
+    color: colors.$foreground;
+  }
+}

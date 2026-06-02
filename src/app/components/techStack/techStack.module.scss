@@ -1,0 +1,26 @@
+@use '../../../../styles/utilities.scss' as global;
+
+.container {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 5rem 1.5rem;
+
+  @include global.mobile {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.heading {
+  margin: 0 0 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 100px;
+  gap: 1rem;
+
+  @include global.mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

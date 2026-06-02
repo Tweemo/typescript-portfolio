@@ -31,8 +31,14 @@ export default function Contact() {
   return (
     <div className={styles.container}>
       {socials.map(({ text, href, Icon }) => (
-        <Link href={href} key={text} className={styles.social} target="_blank">
-          <Icon size="2.5rem" />
+        <Link
+          href={href}
+          key={text}
+          className={styles.social}
+          target="_blank"
+          aria-label={text}
+        >
+          <Icon size="1.5rem" />
         </Link>
       ))}
     </div>

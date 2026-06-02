@@ -1,0 +1,77 @@
+@use 'sass:list';
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/utilities.scss' as global;
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 2px solid colors.$border;
+  border-radius: 1.5rem;
+  text-align: center;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+
+  @include global.hover-focus-active {
+    border-color: colors.$brand;
+    transform: scale(1.03);
+  }
+}
+
+.label {
+  font-weight: 600;
+}
+
+// Size modifiers: drive both grid span and font-size.
+.lg {
+  grid-column: span 2;
+  grid-row: span 2;
+  font-size: 1.5rem;
+}
+
+.md {
+  grid-column: span 2;
+  font-size: 1.25rem;
+}
+
+.sm {
+  grid-column: span 1;
+  font-size: 0.875rem;
+}
+
+@include global.mobile {
+  .lg,
+  .md,
+  .sm {
+    grid-column: span 1;
+    grid-row: span 1;
+    font-size: 1rem;
+  }
+}
+
+// Gradient variants: one rule template, many color pairs.
+$gradients: (
+  'blue': (#3b82f6, #a855f7),
+  'cyan': (#06b6d4, #3b82f6),
+  'pink': (#ec4899, #ef4444),
+  'green': (#22c55e, #14b8a6),
+  'purple': (#a855f7, #ec4899),
+  'orange': (#f97316, #eab308),
+  'red': (#ef4444, #ec4899),
+  'teal': (#14b8a6, #22c55e),
+  'indigo': (#6366f1, #3b82f6),
+  'rose': (#f43f5e, #a855f7),
+  'amber': (#f59e0b, #f97316),
+  'lime': (#84cc16, #22c55e),
+  'sky': (#0ea5e9, #06b6d4),
+);
+
+@each $name, $pair in $gradients {
+  .gradient-#{$name} {
+    background: linear-gradient(
+      to bottom right,
+      rgba(list.nth($pair, 1), 0.1),
+      rgba(list.nth($pair, 2), 0.1)
+    );
+  }
+}
