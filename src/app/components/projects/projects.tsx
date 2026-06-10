@@ -52,8 +52,8 @@ export default function Projects() {
       name: 'Go Electric',
       description:
         'A simple calculator tool to figure out which power company is cheaper to use based on your usage.',
-      tech: ['Golang'],
-      link: 'https://github.com/Tweemo/go-electric',
+      tech: ['Golang', 'Docker', 'React', 'TypeScript'],
+      link: 'https://go-electric-web.onrender.com/',
     },
   ]
 
